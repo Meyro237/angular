@@ -1,0 +1,44 @@
+.contenu__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-image img {
+    border-radius: 3rem;
+    flex: 1 0;
+    object-fit: cover;
+    width: 8rem;
+    height: 10rem;
+}
+.card {
+    width: 20rem;
+    height: 15rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.card {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+}
+.card:hover {
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.2);
+}
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 250px; 
+    max-height: 100px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    position: relative;
+}
+.card-body button {
+    position: absolute;
+    right: 2px;
+    bottom: 5px;
+}

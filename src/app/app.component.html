@@ -1,0 +1,56 @@
+<div class="containere row">
+    <div class="content col-2">
+        <div class="logo">
+            <img src="assets/images/logo.jpeg" alt="">
+            <b>L'innovation au service de la tradition.</b>
+        </div>
+        <nav class="nav-bar">
+            <a routerLink="/acceuil" routerLinkActive="active">Acceuil</a>
+            <a routerLink="/produit" routerLinkActive="active">Produits</a>
+            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        </nav>
+        <div class="connection">
+            <a routerLink="/connexion">
+                <button type="button" class="btn bg-primary">
+                    Connection
+                </button>
+            </a>
+        </div>
+        <div class="menu-footer row">
+            <div class="social_media">
+                <span>Retrouvez nous via :</span>
+                <div class="social_icons row">
+                    <a href="#" class="col4"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="col4"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="col4"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body col-10">
+        <div>
+            <router-outlet style="overflow: scroll;"></router-outlet>  
+        </div>
+        <div class="analogue">
+            <div class="shariot">
+                <div class="icone icon-cart"><a routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i></a></div>
+                <div class="content contenu">
+                    <p>liste des produits dans le shariot</p>
+                </div>
+            </div>
+            <div class="aide">
+                <div class="icone icon-aide"><a href=""><i class="fa-solid fa-question"></i></a></div>
+                <div class="content contenu"></div>
+            </div>
+            <div class="commentaire">
+                <div class="icone icon-comment"><a href=""><i class="fa-solid fa-comment-dots"></i></a></div>
+                <div class="content contenu">
+                    <!-- <form action="">    
+                    <input type="" placeholder="entrer votre nom...">
+                    <input type="email" name="" id="" placeholder="entrez votre Email">
+                </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

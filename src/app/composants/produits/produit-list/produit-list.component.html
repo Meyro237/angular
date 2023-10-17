@@ -1,0 +1,25 @@
+<div class="contenu">
+    <div>
+        <h2 class="m-1">Liste des produits</h2>
+    </div>
+    <div class="contenu__body">
+        <div class="card m-2" style="width: 20rem;" *ngFor="let produit of produits">
+
+            <div class="card-image" style=" align-items: center;">
+                <img src="{{ produit.imageUrl }}" [title]="produit.produitName" alt="" srcset="">
+                <h5 class="card-title m-1" style="text-align: center;font-weight: bold;">{{produit.produitName}} </h5>
+            </div>
+
+            <div class="card-body ">
+                <p class="description"> {{produit.description}} </p>
+                <span style="color: red;"> {{produit.price | currency}} </span>
+                <p><button class="btn bg-primary" style="color: wheat;">J'achète</button></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</div>
